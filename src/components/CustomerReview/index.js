@@ -64,7 +64,7 @@ class CustomerReview extends Component {
             const { ID, Name, Reviews, Platform, link } = each;
 
             return (
-              <a key={ID} href={link} target="_blank" className="card-a">
+              <a key={ID} href={link} target="_blank" rel="noreferrer" className="card-a">
                 <div className="customer-review-bg">
                   <div className="customer-card">
                     <div className="float-div">
