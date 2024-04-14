@@ -1,0 +1,76 @@
+.customer-review-bg {
+    padding: 48px;
+  }
+  
+  .customer-card {
+    height: 250px;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .float-div {
+    align-self: flex-end;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #0d65fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    margin-right: -48px;
+  }
+  
+  .review-p {
+    color: #101a36;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+  }
+  
+  .profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+  }
+  
+  .customer-name {
+    color: #2c3b64;
+    font-size: 16px;
+    font-weight: 555;
+    margin: 0px;
+  }
+  
+  .platform {
+    color: #2c3b64;
+    font-size: 14px;
+    font-weight: 450;
+    margin: 0px;
+    opacity: 0.8;
+  }
+  
+  .failure-bg {
+    height: 100px;
+    color: #99a6ca;
+    font-size: normal;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-a,
+  .card-a:hover,
+  .card-a:active {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

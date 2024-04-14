@@ -1,0 +1,51 @@
+.header-bg {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 16px 0px #00000029;
+  }
+  
+  .app-logo {
+    color: #e5dfd9;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Comme", sans-serif;
+    margin-left: 50px;
+    margin-top: 19px;
+    letter-spacing: 0.55em;
+  }
+  
+  .header-icon-container {
+    width: 161px;
+    height: 24px;
+    padding: 2px;
+    margin-right: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e5dfd9;
+    opacity: 0.7;
+  }
+  
+  .menu-list {
+    align-self: center;
+    list-style: none;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 472px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .menu-list-item {
+    color: #e5dfd9;
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+  }
+  
