@@ -65,7 +65,7 @@ class CustomerReview extends Component {
 
             return (
               <a key={ID} href={link} target="_blank" rel="noreferrer" className="card-a">
-                <div className="customer-review-bg">
+                <div className="customer-review-bg" >
                   <div className="customer-card">
                     <div className="float-div">
                       <FaQuoteLeft />

@@ -1,9 +1,6 @@
-body {
-    background-color: #0c0c0c;
-  }
-  
-  .home-bg {
+ .home-bg {
     min-height: 100vh;
+    background-color: #0c0c0c;
   }
   
   .bag-pack-p {
@@ -25,11 +22,15 @@ body {
     justify-content: flex-start;
   }
   
-  .customer-say-h1 {
+.customer-say-h1 {
     color: #22f3f3;
     font-size: 28px;
     font-weight: 550;
     margin: 32px 0px 32px 0px;
     text-align: center;
-  }
+}
+
+.bg-color{
+   background-color: #f9f9fa;
+}
   

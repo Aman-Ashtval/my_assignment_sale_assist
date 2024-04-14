@@ -1,5 +1,7 @@
 import Slider from "react-slick";
 
+import AppContext from "../../context/AppContext";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
@@ -71,27 +73,40 @@ const BagCategories = () => {
     infinite: false,
     speed: 500,
   };
+            
+          
+  <AppContext.Consumer>
+      {
+        value => {          
+          const {lightTheme} = value 
+          const bgColor = lightTheme ? "card-bg-color" : null;
 
-  const renderBagCard = (cardDetails) => {
-    const { id, title, imgUrl } = cardDetails;
+          const renderBagCard = (cardDetails) =>{   
+            const { id, title, imgUrl } = cardDetails;
 
-    return (
-      <div key={id} className="bag-card-bg ">
-        <div className="card-content">
-          <img src={imgUrl} alt={title} className="bag-img" />
-          <p className="bag-title">{title}</p>
-        </div>
-      </div>
-    );
-  };
+            return (
+                  <div key={id} className="bag-card-bg ">
+                    <div className={`card-content ${bgColor}`}>
+                      <img src={imgUrl} alt={title} className="bag-img" />
+                      <p className="bag-title">{title}</p>
+                    </div>
+                  </div>
+            );
+          }
 
-  return (
-    <div className="slider-container mt-4 ml-4">
-      <Slider {...settings}>
-        {bagsList.map((each) => renderBagCard(each))}
-      </Slider>
-    </div>
-  );
+
+          return (
+            <div className="slider-container mt-4 ml-4">
+              <Slider {...settings}>
+                {bagsList.map((each) => renderBagCard(each))}
+              </Slider>
+            </div>
+          );
+        }
+      }
+    </AppContext.Consumer>
+  
+  
 };
 
 export default BagCategories;
